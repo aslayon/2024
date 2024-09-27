@@ -60,7 +60,7 @@ int main(int argc, char** argv) {
 
     glMatrixMode(GL_PROJECTION);//평행 원근 등 모드설정
     glLoadIdentity(); // 변형을위한 행렬 생성_원본을 유지하고 변형을 추가
-    glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
+    glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0); // x , y , z  의 범위를 제한시킴 
 
 
     glutDisplayFunc(MyDisplay);//call back 함수 등록 glut'   'Func  (마우스,키보드 )
